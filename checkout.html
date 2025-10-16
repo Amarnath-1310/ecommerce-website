@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout • Digital Grocery Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-gradient"></div>
+
+    <header class="app-header glass">
+      <div class="brand">
+        <span class="logo-dot"></span>
+        <h1>Checkout</h1>
+      </div>
+      <a class="btn btn-login" href="index.html">Back to Shop</a>
+    </header>
+
+    <main class="checkout-main">
+      <section class="bill glass">
+        <h2 class="section-title">Final Bill</h2>
+        <ul id="bill-items" class="bill-items"></ul>
+        <div class="bill-summary">
+          <div class="row"><span>Subtotal</span><span id="bill-subtotal">₹0.00</span></div>
+          <div class="row"><span>Discount</span><span id="bill-discount">-₹0.00</span></div>
+          <div class="row"><span>GST (18%)</span><span id="bill-tax">₹0.00</span></div>
+          <div class="row total"><span>Amount Due</span><span id="bill-total">₹0.00</span></div>
+        </div>
+      </section>
+
+      <section class="payments glass">
+        <h2 class="section-title">Pay Securely</h2>
+        <div class="payment-grid">
+          <div class="pay-card" aria-label="Google Pay"><img alt="Google Pay" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlepay.svg" /></div>
+          <div class="pay-card" aria-label="Apple Pay"><img alt="Apple Pay" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/applepay.svg" /></div>
+          <div class="pay-card" aria-label="Paytm"><img alt="Paytm" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/paytm.svg" /></div>
+          <div class="pay-card" aria-label="PhonePe"><img alt="PhonePe" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/phonepe.svg" /></div>
+          <div class="pay-card" aria-label="UPI"><img alt="UPI" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/UPI-Logo-vector.svg/512px-UPI-Logo-vector.svg.png" /></div>
+          <div class="pay-card" aria-label="Visa"><img alt="Visa" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/visa.svg" /></div>
+          <div class="pay-card" aria-label="Mastercard"><img alt="Mastercard" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mastercard.svg" /></div>
+          <div class="pay-card" aria-label="RuPay"><img alt="RuPay" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Rupay-Logo.png/512px-Rupay-Logo.png" /></div>
+        </div>
+        <button id="place-order" class="btn btn-checkout">Place Order</button>
+      </section>
+    </main>
+
+    <script src="checkout.js"></script>
+  </body>
+  </html>
+
+

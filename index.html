@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Grocery Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-gradient"></div>
+
+    <header class="app-header glass">
+      <div class="brand">
+        <span class="logo-dot"></span>
+        <h1>Digital Grocery Cart</h1>
+      </div>
+      <button class="btn btn-login" aria-label="Login (display only)">Login</button>
+    </header>
+
+    <main class="app-main">
+      <section class="products-section">
+        <h2 class="section-title">Fresh Picks</h2>
+        <div id="product-grid" class="product-grid"></div>
+      </section>
+
+      <aside id="cart-panel" class="cart-panel glass">
+        <div class="cart-header">
+          <h2>Your Cart</h2>
+          <button id="close-cart" class="icon-btn" aria-label="Close Cart">✕</button>
+        </div>
+        <ul id="cart-items" class="cart-items"></ul>
+        <div class="cart-summary">
+          <div class="row"><span>Subtotal</span><span id="subtotal">₹0.00</span></div>
+          <div class="coupon">
+            <input id="coupon-input" type="text" placeholder="Coupon code (SAVE10 / FRESH20)" />
+            <button id="apply-coupon" class="btn btn-apply">Apply</button>
+          </div>
+          <div class="row"><span>Discount</span><span id="discount">-₹0.00</span></div>
+          <div class="row total"><span>Total</span><span id="total">₹0.00</span></div>
+          <button id="go-checkout" class="btn btn-checkout">Checkout</button>
+        </div>
+      </aside>
+    </main>
+
+    <button id="floating-cart" class="floating-cart" aria-label="Open Cart">
+      🛒 <span id="cart-count" class="badge">0</span>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
